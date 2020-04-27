@@ -1,0 +1,28 @@
+# [START app_yaml]
+service: osd-web
+runtime: php55
+# [END app_yaml]
+
+env_variables:
+  # Put production environment variables here.
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/techloft-173609:europe-west1:techloft-db1;dbname=oceanspring
+  MYSQL_USER: mac
+  MYSQL_PASSWORD: "Some1ilove"
+  MYSQL_DB: oceanspring
+
+handlers:
+  - url: /
+    script: index.php
+    secure: always
+
+  - url: /public
+    static_dir: public
+    secure: always
+
+  - url: /dashboard
+    static_dir: dashboard
+    secure: always
+
+  - url: /(.*)
+    script: index.php
+    secure: always

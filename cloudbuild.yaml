@@ -1,0 +1,12 @@
+steps:
+
+- id: build
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    gcloud source repos clone oceanspring_web --project=techloft-173609
+    git checkout master
+    gcloud app deploy app.yaml
+    curl -X POST --data-urlencode "payload={\"channel\": \"#deploybot\", \"username\": \"deploybot\", \"text\": \"OSD web admin has been deployed successfully.\", \"icon_emoji\": \":package:\"}" https://hooks.slack.com/services/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

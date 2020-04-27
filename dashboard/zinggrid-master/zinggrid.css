@@ -1,0 +1,186 @@
+.fas {
+	padding-right: 5px;
+	font-size: 15px;
+}
+
+.blue {
+	color: #2f89fc;
+}
+
+.gold {
+	color: #f4b342;
+}
+
+.green {
+	color: #4bbb8b;
+}
+
+.grey {
+	color: #ccc;
+}
+
+.red {
+	color: #ff5759;
+}
+
+zing-grid {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Heebo', sans-serif;
+	font-size: 11px;
+	background: #ffffff;
+	border: none;
+	color: #ffffff;
+	--theme-color-primary: #606470;
+	--zg-cell-background_sorted: #eee;
+	--zg-head-cell-background_sorted: #ccc;
+	--zg-icon-init-fill: #606470;
+	--zg-head-cell-icon-color_sorted: #606470;
+	--zg-select-arrow-color: #606470;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+zg-caption {
+	border-bottom: 1px solid #efefef;
+	font-weight: 400;
+	background: #ffffff;
+	color: #606470;
+	border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+}
+
+zg-control-bar {
+	display: block;
+}
+
+zg-head,
+zg-head-cell {
+	background: #ffffff;
+	color: #606470;
+	font-size: 9px;
+	font-weight: bold;
+	text-transform: none;
+}
+
+zg-icon {
+	width: 15px;
+}
+
+zg-head,
+zg-body {
+	border: none;
+}
+
+zg-row {
+	border-bottom: 1px solid #efefef;
+	background: #ffffff;
+	color: #414141;
+}
+
+zg-row,
+zg-cell {
+	padding: 0 15px;
+	height: 40px;
+}
+
+zg-body zg-row:last-child {
+	border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
+	-webkit-border-radius: 0 0 8px 8px;
+}
+
+zg-pager {
+	background: #ffffff;
+	margin-top: 0px;
+	color: #606470;
+	border-radius: 0 0 8px 8px;
+	-webkit-border-radius: 0 0 8px 8px;
+	-moz-border-radius: 0 0 8px 8px;
+	font-size: 10px;
+}
+
+zg-row.confirmed {
+	color: #2f89fc;
+	font-weight: normal;
+}
+
+zg-row.dispatched {
+	color: #f4b342;
+	font-weight: normal;
+}
+
+zg-row.delivered {
+	color: #4bbb8b;
+	font-weight: normal;
+}
+
+zg-row.pending {
+	color: #ff5759;
+	font-weight: normal;
+}
+
+.bike {
+	color: #2f89fc;
+	font-weight: bold;
+}
+
+zg-row.outdoor-bike {
+	color: #2f89fc;
+	font-weight: normal;
+}
+
+.run,
+.peak {
+	color: #ff5759;
+	font-weight: bold;
+}
+
+zg-row.run {
+	color: #ff5759;
+	font-weight: normal;
+}
+
+
+zg-row.peak {
+	color: #ff5759;
+	font-weight: normal;
+}
+
+.sport {
+	color: #4bbb8b;
+	font-weight: bold;
+}
+
+zg-row.sport {
+	color: #4bbb8b;
+	font-weight: normal;
+}
+
+.not-peak {
+	color: #cccccc;
+}
+
+.calorie-goal {
+	color: #f4b342;
+	font-weight: bold;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+zg-watermark {
+	display: none;
+}
+
+@media screen and (max-width: 650px) {
+	.columns {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	.columns zing-grid:first-child {
+		margin-bottom: 30px;
+	}
+}
